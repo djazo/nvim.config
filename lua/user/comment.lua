@@ -11,11 +11,11 @@ local M = {
 
 function M.config()
   local wk = require "which-key"
-  wk.register {
+  wk.add {
     {"<leader>/", "<Plug>(comment_toggle_linewise_current)", desc = "Comment" },
   }
 
-  wk.register {
+  wk.add {
     {"<leader>/", "<Plug>(comment_toggle_linewise_visual)", desc = "Comment", mode = "v" },
   }
 
