@@ -1,6 +1,6 @@
 local M = {
   "folke/tokyonight.nvim",
-  lazy = falsem
+  lazy = false,
   priority = 1000,
 }
 
