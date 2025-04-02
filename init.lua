@@ -1,2 +1,5 @@
 require "user.options"
 require "user.keymaps"
+require "user.spec"
+spec "user.theme"
+require "user.lazy"
