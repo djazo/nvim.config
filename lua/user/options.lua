@@ -1,7 +1,7 @@
 vim.opt.backup = false -- backup files
 vim.opt.clipboard = "unnamedplus" -- os paste
 vim.opt.cmdheight = 2 -- commandline height
-vim.opt.colorcolumn = "80,120" - vertical bars
+vim.opt.colorcolumn = "80,120" -- vertical bars
 vim.opt.completeopt = { "menuone", "noselect" }
 vim.opt.conceallevel = 0
 vim.opt.cursorline = true -- highlight the current line
@@ -10,7 +10,7 @@ vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applicati
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.laststatus = 3
-vim.opt.mouse = "a"
+vim.opt.mouse = ""
 vim.opt.number = true -- set numbered lines
 vim.opt.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.opt.pumblend = 10
