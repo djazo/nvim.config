@@ -1,0 +1,6 @@
+-- initialize plugin loader for lazy to do it's magic later
+LAZY_PLUGIN_SPEC = {}
+
+function spec(item)
+  table.insert(LAZY_PLUGIN_SPEC, { import = item })
+end
