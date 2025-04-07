@@ -1,5 +1,8 @@
 local M = {
   "folke/which-key.nvim",
+  dependencies = {
+    "echasnovski/mini.nvim",
+  }
 }
 
 function M.config()
