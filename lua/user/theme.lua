@@ -1,11 +1,12 @@
 local M = {
-  "folke/tokyonight.nvim",
+  "catppuccin/nvim",
+  flavour = 'mocha',
   lazy = false,
   priority = 1000,
 }
 
 function M.config()
-  vim.cmd.colorscheme "tokyonight"
+  vim.cmd.colorscheme "catppuccin"
 end
 
 return M
