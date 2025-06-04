@@ -1,5 +1,5 @@
 local M = {
-	"github/copilot.vim",
+	"github/copilot.nvim",
 }
 
 return M
