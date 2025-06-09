@@ -9,6 +9,9 @@ local M = {
   lazy = false,
   opts = {
   },
+  config = function()
+    vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left<CR>", { noremap = true, silent = true })
+  end
 }
 
 return M
