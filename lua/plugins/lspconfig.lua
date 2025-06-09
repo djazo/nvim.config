@@ -1,7 +1,8 @@
 local M = {
   'neovim/nvim-lspconfig',
   config = function()
-    vim.lsp.enable('clangd',{ cmd = '/opt/homebrew/opt/llvm/bin/clangd' })
+    vim.lsp.config('clangd',{ cmd = '/opt/homebrew/opt/llvm/bin/clangd' })
+    vim.lsp.enable('clangd')
     vim.lsp.enable('lua_ls')
     vim.lsp.enable('bashls')
     vim.lsp.enable('cmake')
