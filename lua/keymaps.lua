@@ -16,7 +16,7 @@ keymap("n", "x", '"_x', opts)
 
 -- sizing
 keymap("n","<Up>", ":resize -2<CR>", opts)
-keymap("n","<Down>", ":resize +2<CR", opts)
+keymap("n","<Down>", ":resize +2<CR>", opts)
 keymap("n","<Left>", ":vertical resize -2<CR>", opts)
 keymap("n","<Right>", ":vertical resize +2<CR>", opts)
 
