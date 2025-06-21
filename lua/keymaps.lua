@@ -43,3 +43,11 @@ keymap('n', '<leader>lh', vim.lsp.buf.hover, { desc = '[L]SP [H]over' })
 keymap('n', '<leader>la', vim.lsp.buf.code_action, { desc = '[L]SP [A]ction' })
 keymap('n', '<leader>ln', vim.lsp.buf.rename, { desc = '[L]SP re[N]ame' })
 keymap('n', '<leader>lf', vim.lsp.buf.format, { desc = '[L]SP [F]ormat' })
+
+-- trouble keymaps
+keymap('n', '<leader>xx', '<cmd>TroubleToggle<cr>', { desc = '[X] Trouble Toggle' })
+keymap('n', '<leader>xX', '<cmd>Trouble diagnostics toggle filter.buf=0<cr>', { desc = 'Buffer Diagnostics' })
+keymap('n', '<leader>xs', '<cmd>Trouble symbols toggle focus=false', { desc = 'Symbols (Trouble)' })
+keymap('n', '<leader>xl', '<cmd>Trouble lsp toggle focus=false win.position=right<cr>', { desc = 'LSP (Trouble)' })
+keymap('n', '<leader>xL', '<cmd>Trouble loclist toggle<cr>', { desc = 'Location List (Trouble)' })
+keymap('n', '<leader>xq', '<cmd>Trouble qflist toggle<cr>', { desc = 'Quickfix List (Trouble)' })
