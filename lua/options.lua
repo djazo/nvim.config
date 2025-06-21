@@ -1,6 +1,7 @@
 vim.opt.backup = false
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cmdheight = 1
+vim.opt.colorcolumn = "80,100"
 vim.opt.completeopt = { "menuone", "noselect" }
 vim.opt.conceallevel = 0
 vim.opt.cursorline = true
@@ -19,6 +20,7 @@ vim.opt.scrolloff = 10
 vim.opt.shiftwidth = 2
 vim.opt.showmode = false
 vim.opt.sidescrolloff = 0
+vim.opt.signcolumn = "yes"
 vim.opt.smartcase = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -34,3 +36,7 @@ vim.opt.writebackup = false
 -- disable providers
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
+
+-- keybinds that need to be before lazy
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
