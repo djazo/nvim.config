@@ -42,5 +42,4 @@ keymap('n', '<leader>lr', vim.lsp.buf.references, { desc = '[L]SP [R]eferences' 
 keymap('n', '<leader>lh', vim.lsp.buf.hover, { desc = '[L]SP [H]over' })
 keymap('n', '<leader>la', vim.lsp.buf.code_action, { desc = '[L]SP [A]ction' })
 keymap('n', '<leader>ln', vim.lsp.buf.rename, { desc = '[L]SP re[N]ame' })
-
-
+keymap('n', '<leader>lf', vim.lsp.buf.format, { desc = '[L]SP [F]ormat' })
