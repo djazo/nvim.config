@@ -1,6 +1,6 @@
 local M = {
-  "nvim-tree/nvim-tree.lua",
-  event = "VeryLazy",
+  'nvim-tree/nvim-tree.lua',
+  event = 'VeryLazy',
 }
 
 function M.config()
@@ -22,10 +22,10 @@ function M.config()
         enable = false,
         inline_arrows = true,
         icons = {
-          corner = "└",
-          edge = "│",
-          item = "│",
-          none = " ",
+          corner = '└',
+          edge = '│',
+          item = '│',
+          none = ' ',
         },
       },
       icons = {

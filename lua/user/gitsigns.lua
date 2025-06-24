@@ -1,7 +1,7 @@
 local M = {
-  "lewis6991/gitsigns.nvim",
-  event = "BufEnter",
-  cmd = "Gitsigns",
+  'lewis6991/gitsigns.nvim',
+  event = 'BufEnter',
+  cmd = 'Gitsigns',
 }
 
 function M.config()

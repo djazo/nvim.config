@@ -1,8 +1,8 @@
 local M = {
-  "numToStr/Comment.nvim",
+  'numToStr/Comment.nvim',
   lazy = false,
   dependencies = {
-    "JoosepAlviste/nvim-ts-context-commentstring",
+    'JoosepAlviste/nvim-ts-context-commentstring',
     event = 'VeryLazy',
   },
 }

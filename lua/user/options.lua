@@ -1,12 +1,12 @@
 vim.opt.backup = false
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.cmdheight = 1
-vim.opt.colorcolumn = "80,100"
-vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.colorcolumn = '80,100'
+vim.opt.completeopt = { 'menuone', 'noselect' }
 vim.opt.conceallevel = 0
 vim.opt.cursorline = true
 vim.opt.expandtab = true
-vim.opt.fileencoding = "utf-8"
+vim.opt.fileencoding = 'utf-8'
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.laststatus = 3
@@ -20,7 +20,7 @@ vim.opt.scrolloff = 10
 vim.opt.shiftwidth = 2
 vim.opt.showmode = false
 vim.opt.sidescrolloff = 0
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = 'yes'
 vim.opt.smartcase = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -38,5 +38,5 @@ vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
 -- these need to be before lazy
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '

@@ -1,5 +1,5 @@
 local M = {
-  "shaunsingh/nord.nvim",
+  'shaunsingh/nord.nvim',
   lazy = false,
   priority = 10000,
   config = function()
