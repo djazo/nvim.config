@@ -14,26 +14,25 @@ function M.config()
   local cmp = require('cmp')
 
   cmp.setup({
-    mapping = {
-      ['<CR>'] = cmp.mapping({
-        i = function(fallback)
-          if cmp.visible() and cmp.get_active_entry() then
-            cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
-          else
-            fallback()
-          end
-        end,
-        s = cmp.mapping.confirm({ select = true }),
-        c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
-      })
+    snippet = {
+      expand = function(args)
+        vim.snippet.expand(args.body)
+      end
     },
+    mapping = cmp.mapping.preset.insert({
+      ['<C-CR>'] = cmp.mapping.complete(),
+      ['<CR>'] = cmp.mapping.confirm({ select = false }),
+      ['<C-e>'] = cmp.mapping.abort(),
+      ['<a-f>'] = cmp.mapping.scroll_docs(4),
+      ['<a-b>'] = cmp.mapping.scroll_docs(-4)
+    }),
     sources = {
       { name = 'nvim_lsp' },
+      { name = 'copilot' },
       { name = 'buffer' },
       { name = 'path' },
       { name = 'cmdline' },
       { name = 'nvim_lua' },
-      { name = 'copilot' },
     }
   })
 end
