@@ -26,15 +26,20 @@ function M.config()
       ['<a-f>'] = cmp.mapping.scroll_docs(4),
       ['<a-b>'] = cmp.mapping.scroll_docs(-4)
     }),
-    sources = {
+    sources = cmp.config.sources({
       { name = 'nvim_lsp' },
       { name = 'copilot' },
       { name = 'buffer' },
       { name = 'path' },
       { name = 'cmdline' },
       { name = 'nvim_lua' },
-    }
+    }),
+    window = {
+      completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered()
+    },
   })
+
 end
 
 return M
