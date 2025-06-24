@@ -1,4 +1,21 @@
--- load options
-require "options"
-require "lazyload"
-require "keymaps"
+require 'user.launch'
+require 'user.options'
+require 'user.keymaps'
+require 'user.autocmds'
+spec 'user.colorscheme'
+spec 'user.devicons'
+spec 'user.treesitter'
+spec 'user.lspconfig'
+spec 'user.cmp'
+spec 'user.telescope'
+spec 'user.gitsigns'
+spec 'user.whichkey'
+spec 'user.nvimtree'
+spec 'user.comment'
+spec 'user.lualine'
+spec 'user.harpoon'
+spec 'user.neogit'
+spec 'user.indentline'
+spec 'user.autopairs'
+require 'user.lazy'
+require 'user.binds'

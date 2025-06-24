@@ -12,4 +12,5 @@ local M = {
     require('nord').set()
   end
 }
+
 return M

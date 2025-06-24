@@ -37,6 +37,6 @@ vim.opt.writebackup = false
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
--- keybinds that need to be before lazy
+-- these need to be before lazy
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
