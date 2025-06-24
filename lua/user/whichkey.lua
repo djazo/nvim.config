@@ -24,10 +24,10 @@ function M.config()
         operators = false,
         motions = false,
         text_objects = false,
-        windows = false,
-        nav = false,
-        z = false,
-        g = false,
+        windows = true,
+        nav = true,
+        z = true,
+        g = true,
       }
     }
   })
