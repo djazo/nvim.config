@@ -8,7 +8,7 @@ local wk = require('which-key')
 -- harpoon
 
 keymap('n', '<TAB>', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>', opts)
-keymap('n', '<s-m>', '<cmd>lua require("user.harpoon").mark_file()<cr>', opts)
+keymap('n', '<A-TAB>', '<cmd>lua require("user.harpoon").mark_file()<cr>', opts)
 
 -- nvimtree
 
@@ -19,7 +19,8 @@ wk.add({
 -- telescope keymaps
 local builtin = require('telescope.builtin')
 wk.add({
-  { '<leader>sb', '<cmd>Telescope buffers previewer=false<cr>', desc = 'Find' },
+  { '<leader>f', group = 'Telescope'},
+  { '<leader>fF', '<cmd>Telescope buffers previewer=false<cr>', desc = 'Find' },
   { '<leader>fb', '<cmd>Telescope git_branches<cr>', desc = 'Checkout Branch' },
   { '<leader>ff', '<cmd>Telescope find_files<cr>', desc = 'Find Files' },
   { '<leader>fp', '<cmd>lua require("telescope").extensions.projects.projects()<cr>', desc = 'Projects' },
@@ -32,6 +33,7 @@ wk.add({
 -- lsp keymaps
 
 wk.add({
+  { '<leader>l', group = 'LSP'},
   { '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<cr>', desc = 'Code Action' },
   { '<leader>lf', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', desc = 'Format' },
   { '<leader>lh', '<cmd>lua require("user.lspconfig").toggle_inlay_hints()<cr>', desc = 'Hints' },
@@ -46,6 +48,7 @@ wk.add({
 -- gitsigns
 
 wk.add({
+  { '<leader>g', group = 'GIT'},
   { '<leader>gj', '<cmd>lua require("gitsigns").next_hunk({navigation_message = false})<cr>', desc = 'Next Hunk' },
   { '<leader>gk', '<cmd>lua require("gitsigns").prev_hunk({navigation_message = false})<cr>', desc = 'Prev Hunk' },
   { '<leader>gp', '<cmd>lua require("gitsigns").preview_hunk()<cr>', desc = 'Preview Hunk' },
