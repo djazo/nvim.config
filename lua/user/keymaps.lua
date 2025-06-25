@@ -11,3 +11,7 @@ keymap('n', '<C-l>', '<C-w>l', opts)
 
 -- don't put deleted chars into buf
 keymap('n', 'x', '"_x', opts)
+
+-- moving lines
+keymap('v', '<a-k>', ":m '<-2<cr>gv=gv", { desc = "move lines up in visual selection" })
+keymap('v', '<a-j>', ":m '>+1<cr>gv=gv", { desc = "move lines down in visual selection" })
