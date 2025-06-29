@@ -1,8 +1,8 @@
 vim.opt.backup = false
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.cmdheight = 1
-vim.opt.colorcolumn = '80,100'
-vim.opt.completeopt = { 'menuone', 'noselect' }
+vim.opt.colorcolumn = '80,120'
+vim.opt.completeopt = { 'menu','menuone', 'noselect', 'preview' }
 vim.opt.conceallevel = 0
 vim.opt.cursorline = true
 vim.opt.expandtab = true
