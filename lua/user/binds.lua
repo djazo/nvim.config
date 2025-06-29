@@ -59,3 +59,9 @@ wk.add({
   { '<leader>gu', '<cmd>lua require("gitsigns").undo_stage_hunk()<cr>', desc = 'Undo Stage Hunk' },
   { '<leader>gd', '<cmd>Gitsigns diffthis HEAD<cr>', desc = 'Git Diff' },
 })
+
+wk.add({
+  { '<leader>t', group = 'Todo'},
+  { '<leader>tl', '<cmd>TodoLocList<cr>', desc = 'Show TODO list'},
+  { '<leader>tt', '<cmd>TodoTelescope<cr>', desc = 'Todo Telescope'}
+})
