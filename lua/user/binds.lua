@@ -36,7 +36,7 @@ wk.add({
   { '<leader>l', group = 'LSP'},
   { '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<cr>', desc = 'Code Action' },
   { '<leader>lf', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', desc = 'Format' },
-  { '<leader>lh', '<cmd>lua require("user.lspconfig").toggle_inlay_hints()<cr>', desc = 'Hints' },
+  { '<leader>lh', '<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>', desc = 'Hints' },
   { '<leader>li', '<cmd>LspInfo<cr>', desc = 'Info' },
   { '<leader>lj', '<cmd>lua vim.diagnostic.goto_next()<cr>', desc = 'Next Diagnostic' },
   { '<leader>lk', '<cmd>lua vim.diagnostic.goto_prev()<cr>', desc = 'Prev Diagnostic' },
