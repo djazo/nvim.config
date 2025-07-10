@@ -71,6 +71,10 @@ function M.config()
       completion = cmp.config.window.bordered(),
       documentation = cmp.config.window.bordered()
     },
+    experimantal = {
+      ghost_text = true,
+      native_menu = false
+    }
   })
 
 end
