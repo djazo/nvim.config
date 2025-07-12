@@ -1,13 +1,13 @@
 local M = {
   'hrsh7th/nvim-cmp',
   dependencies = {
-    {'hrsh7th/cmp-buffer', event = 'InsertEnter'},
-    {'hrsh7th/cmp-nvim-lsp', event = 'InsertEnter'},
-    {'hrsh7th/cmp-path', event = 'InsertEnter'},
-    {'hrsh7th/cmp-cmdline', event = 'CmdlineEnter'},
-    {'hrsh7th/cmp-nvim-lua', event = 'InsertEnter'},
-    {'zbirenbaum/copilot-cmp', event = 'InsertEnter'},
-    {'onsails/lspkind.nvim'}
+    { 'hrsh7th/cmp-buffer',     event = 'InsertEnter' },
+    { 'hrsh7th/cmp-nvim-lsp',   event = 'InsertEnter' },
+    { 'hrsh7th/cmp-path',       event = 'InsertEnter' },
+    { 'hrsh7th/cmp-cmdline',    event = 'CmdlineEnter' },
+    { 'hrsh7th/cmp-nvim-lua',   event = 'InsertEnter' },
+    { 'zbirenbaum/copilot-cmp', event = 'InsertEnter' },
+    { 'onsails/lspkind.nvim' }
   }
 }
 
@@ -28,7 +28,7 @@ function M.config()
         },
         ellipsis_char = '...'
       })
-   },
+    },
     snippet = {
       expand = function(args)
         vim.snippet.expand(args.body)
@@ -61,8 +61,8 @@ function M.config()
     }),
     sources = cmp.config.sources({
       { name = 'nvim_lsp', priority = 1 },
-      { name = 'copilot', priority = 3 },
-      { name = 'buffer', priority = 2 },
+      { name = 'copilot',  priority = 3 },
+      { name = 'buffer',   priority = 2 },
       { name = 'path' },
       { name = 'cmdline' },
       { name = 'nvim_lua' },
@@ -76,7 +76,6 @@ function M.config()
       native_menu = false
     }
   })
-
 end
 
 return M

@@ -1,7 +1,7 @@
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-keymap({'n','v'}, '<Space>', '', opts)
+keymap({ 'n', 'v' }, '<Space>', '', opts)
 
 -- Better window navigation
 keymap('n', '<C-h>', '<C-w>h', opts)

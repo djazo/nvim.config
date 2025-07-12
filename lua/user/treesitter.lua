@@ -1,11 +1,11 @@
 local M = {
   'nvim-treesitter/nvim-treesitter',
-  event = {'BufReadPost', 'BufNewFile'},
+  event = { 'BufReadPost', 'BufNewFile' },
   build = ':TSUpdate',
 }
 
 function M.config()
-  require ('nvim-treesitter').setup {
+  require('nvim-treesitter').setup {
     ensure_installed = {
       'asm',
       'bash',
@@ -32,6 +32,7 @@ function M.config()
       'ninja',
       'objdump',
       'python',
+      'regex',
       'sql',
       'toml',
       'xml',
