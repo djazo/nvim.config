@@ -31,7 +31,7 @@ function M.config()
     },
     snippet = {
       expand = function(args)
-        vim.snippet.expand(args.body)
+        require('luasnip').lsp_expand(args.body)
       end
     },
     mapping = cmp.mapping.preset.insert({
@@ -61,8 +61,9 @@ function M.config()
     }),
     sources = cmp.config.sources({
       { name = 'nvim_lsp', priority = 1 },
-      { name = 'copilot',  priority = 3 },
-      { name = 'buffer',   priority = 2 },
+      { name = 'copilot',  priority = 4 },
+      { name = 'buffer',   priority = 3 },
+      { name = 'luasnip',  priority = 2 },
       { name = 'path' },
       { name = 'cmdline' },
       { name = 'nvim_lua' },
