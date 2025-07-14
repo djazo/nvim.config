@@ -62,6 +62,8 @@ wk.add({
   { '<leader>gd', '<cmd>Gitsigns diffthis HEAD<cr>',                                          desc = 'Git Diff' },
 })
 
+-- todo comments
+
 local todo = require('todo-comments')
 wk.add({
   { '<leader>t',  group = 'Todo' },
@@ -88,4 +90,11 @@ wk.add({
     end,
     desc = 'Find TODO'
   },
+})
+
+-- doxygen generate comments
+
+wk.add({
+  { '<leader>d',  group = 'Doxygen' },
+  { '<leader>dg', '<cmd> lua require("neogen").generate()<cr>', desc = 'Generate Doc' },
 })
