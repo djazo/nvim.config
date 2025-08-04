@@ -33,6 +33,7 @@ function M.config()
       'objdump',
       'python',
       'regex',
+      'verilog',
       'sql',
       'toml',
       'xml',
