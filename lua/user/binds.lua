@@ -10,15 +10,11 @@ local wk = require('which-key')
 keymap('n', '<TAB>', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>', opts)
 keymap('n', '<A-TAB>', '<cmd>lua require("user.harpoon").mark_file()<cr>', opts)
 
--- oilier thingie.
-wk.add({
-  { '<leader>-', '<cmd>Oil<cr>', desc = 'Explorer' },
-})
 -- nvimtree
 
--- wk.add({
---   { '<leader>e', '<cmd>NvimTreeToggle<cr>', desc = 'Explorer' },
--- })
+wk.add({
+  { '<leader>e', '<cmd>NvimTreeToggle<cr>', desc = 'Explorer' },
+})
 
 -- telescope keymaps
 local builtin = require('telescope.builtin')
