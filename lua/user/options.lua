@@ -1,3 +1,4 @@
+vim.opt.autoindent = true
 vim.opt.backup = false
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.cmdheight = 1
@@ -7,6 +8,7 @@ vim.opt.conceallevel = 0
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.fileencoding = 'utf-8'
+vim.opt.formatoptions = 'jqlnt'
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.laststatus = 3
