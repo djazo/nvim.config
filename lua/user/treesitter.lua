@@ -38,6 +38,7 @@ function M.config()
       'toml',
       'xml',
       'yaml',
+      'zsh',
     },
     hilight = {
       enable = true,
