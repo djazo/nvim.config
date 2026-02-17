@@ -6,6 +6,7 @@ local M = {
     { 'hrsh7th/cmp-path',       event = 'InsertEnter' },
     { 'hrsh7th/cmp-cmdline',    event = 'CmdlineEnter' },
     { 'hrsh7th/cmp-nvim-lua',   event = 'InsertEnter' },
+    { 'zbirenbaum/copilot-cmp',  event = 'InsertEnter' },
     { 'onsails/lspkind.nvim' }
   }
 }
@@ -57,8 +58,9 @@ function M.config()
     }),
     sources = cmp.config.sources({
       { name = 'nvim_lsp', priority = 1 },
-      { name = 'buffer',   priority = 3 },
+      { name = 'buffer',   priority = 2 },
       { name = 'path' },
+      { name = 'copilot', priority = 3 },
       { name = 'cmdline' },
     }),
     window = {
