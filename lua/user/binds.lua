@@ -48,3 +48,10 @@ wk.add({
   { '<leader>gu', '<cmd>lua require("gitsigns").undo_stage_hunk()<cr>',                       desc = 'Undo Stage Hunk' },
   { '<leader>gd', '<cmd>Gitsigns diffthis HEAD<cr>',                                          desc = 'Git Diff' },
 })
+
+wk.add({
+  { '<leader>d',  group = 'Dox' },
+  { '<leader>dc', '<cmd> lua require("neogen").generate({ type = "class" })<cr>', desc = 'Generate Class Doc' },
+  { '<leader>df', '<cmd> lua require("neogen").generate({ type = "func" })<cr>',  desc = 'Generate Func Doc' },
+  { '<leader>dF', '<cmd> lua require("neogen").generate({ type = "file" })<cr>',  desc = 'Generate File Doc' },
+})
