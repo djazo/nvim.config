@@ -4,7 +4,11 @@ local M = {
     'echasnovski/mini.icons',
   },
   config = function()
-    require('oil').setup()
+    require('oil').setup({
+      win_options = {
+        signcolumn = "yes:3",
+      },
+    })
   end
 }
 
