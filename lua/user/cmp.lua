@@ -6,7 +6,7 @@ local M = {
     { 'hrsh7th/cmp-path',       event = 'InsertEnter' },
     { 'hrsh7th/cmp-cmdline',    event = 'CmdlineEnter' },
     { 'hrsh7th/cmp-nvim-lua',   event = 'InsertEnter' },
-    { 'zbirenbaum/copilot-cmp',  event = 'InsertEnter' },
+    { 'zbirenbaum/copilot-cmp', event = 'InsertEnter' },
     { 'onsails/lspkind.nvim' }
   }
 }
@@ -14,6 +14,9 @@ local M = {
 function M.config()
   local cmp = require('cmp')
   local lspkind = require('lspkind')
+  local copilot = require('copilot_cmp')
+
+  copilot.setup()
 
   cmp.setup({
     formatting = {
@@ -60,7 +63,7 @@ function M.config()
       { name = 'nvim_lsp', priority = 1 },
       { name = 'buffer',   priority = 2 },
       { name = 'path' },
-      { name = 'copilot', priority = 3 },
+      { name = 'copilot',  priority = 3 },
       { name = 'cmdline' },
     }),
     window = {
