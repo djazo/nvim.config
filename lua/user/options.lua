@@ -34,6 +34,7 @@ vim.opt.title = false
 vim.opt.undofile = true
 vim.opt.updatetime = 100
 vim.opt.writebackup = false
+vim.opt.rtp:append('/opt/homebrew/opt/fzf')
 
 -- disable providers
 vim.g.loaded_perl_provider = 0
