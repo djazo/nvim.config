@@ -55,3 +55,11 @@ wk.add({
   { '<leader>df', '<cmd> lua require("neogen").generate({ type = "func" })<cr>',  desc = 'Generate Func Doc' },
   { '<leader>dF', '<cmd> lua require("neogen").generate({ type = "file" })<cr>',  desc = 'Generate File Doc' },
 })
+
+local capi = require('Comment.api')
+
+wk.add({
+  { '<leader>c',  group = 'Comment' },
+  { '<leader>cc', capi.toggle.linewise.current,  desc = 'Toggle Comment Linewise' },
+  { '<leader>cb', capi.toggle.blockwise.current, desc = 'Toggle Comment Blockwise' },
+})
