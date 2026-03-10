@@ -34,6 +34,7 @@ wk.add({
   { '<leader>ll', '<cmd>lua vim.lsp.codelens.run()<cr>',                                         desc = 'CodeLens Action' },
   { '<leader>lq', '<cmd>lua vim.diagnostic.setloclist()<cr>',                                    desc = 'QuickFix' },
   { '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<cr>',                                           desc = 'Rename' },
+  { '<leader>lc', '<cmd>lua vim.lsp.buf.code_action()<cr>',                                      desc = 'Fix' },
 })
 
 wk.add({
