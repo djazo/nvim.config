@@ -1,29 +1,14 @@
-local M = {
-  'lewis6991/gitsigns.nvim',
-  event = 'BufEnter',
-  cmd = 'Gitsigns',
-}
+local M = {}
 
 function M.config()
   local icons = require('core.icons')
-
   require('gitsigns').setup({
     signs = {
-      add = {
-        text = icons.ui.BoldLineMiddle
-      },
-      change = {
-        text = icons.ui.BoldLineDashedMiddle,
-      },
-      delete = {
-        text = icons.ui.TriangleShortArrowRight,
-      },
-      topdelete = {
-        text = icons.ui.TriangleShortArrowRight,
-      },
-      changedelete = {
-        text = icons.ui.BoldLineMiddle,
-      },
+      add          = { text = icons.ui.BoldLineMiddle },
+      change       = { text = icons.ui.BoldLineDashedMiddle },
+      delete       = { text = icons.ui.TriangleShortArrowRight },
+      topdelete    = { text = icons.ui.TriangleShortArrowRight },
+      changedelete = { text = icons.ui.BoldLineMiddle },
     },
     watch_gitdir = {
       interval = 1000,

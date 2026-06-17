@@ -1,9 +1,4 @@
-local M = {
-  'nvim-lualine/lualine.nvim',
-  dependencies = {
-    'AndreM222/copilot-lualine',
-  },
-}
+local M = {}
 
 function M.config()
   require('lualine').setup({

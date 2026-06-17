@@ -1,13 +1,7 @@
-local M = {
-  'folke/which-key.nvim',
-  dependencies = {
-    'echasnovski/mini.icons'
-  }
-}
+local M = {}
 
 function M.config()
   local wk = require('which-key')
-
   wk.setup({
     defaults = {
       mode = 'n',

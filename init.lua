@@ -1,18 +1,19 @@
 require 'core.options'
 require 'core.keymaps'
 require 'core.autocmds'
-require 'plugins.spec'
-spec 'plugins.telescope'
-spec 'plugins.colortheme'
-spec 'plugins.comment'
-spec 'plugins.lualine'
-spec 'plugins.autopairs'
-spec 'plugins.lspformat'
-spec 'plugins.treesitter'
-spec 'plugins.gitsigns'
-spec 'plugins.indentline'
-spec 'plugins.neogen'
-spec 'plugins.whichkey'
-require 'plugins.lazy'
+require 'plugins.pack'
+require('plugins.colortheme').config()
+require('plugins.telescope').config()
+require('plugins.comment').config()
+require('plugins.lualine').config()
+require('plugins.autopairs').config()
+require('plugins.lspformat').config()
+require('plugins.treesitter').config()
+require('plugins.gitsigns').config()
+require('plugins.indentline').config()
+require('plugins.neogen').config()
+require('plugins.whichkey').config()
+require('plugins.luasnip').config()
+require('plugins.oil').config()
 require 'core.binds'
 require 'core.lspconfig'

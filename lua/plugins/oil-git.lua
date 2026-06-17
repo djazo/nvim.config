@@ -1,5 +1,1 @@
-local M = {
-  'benomahony/oil-git.nvim',
-}
-
-return M
+-- loaded automatically by vim.pack, no setup needed
