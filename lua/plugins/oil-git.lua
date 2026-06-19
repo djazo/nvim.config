@@ -1,1 +1,0 @@
--- loaded automatically by vim.pack, no setup needed

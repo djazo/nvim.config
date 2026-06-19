@@ -1,7 +1,5 @@
-local M = {}
+vim.pack.add({
+  'https://github.com/nvim-mini/mini.pairs'
+})
 
-function M.config()
-  require('nvim-autopairs').setup()
-end
-
-return M
+require('mini.pairs').setup()

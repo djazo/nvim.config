@@ -3,6 +3,7 @@ vim.opt.backup = false
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.cmdheight = 1
 vim.opt.colorcolumn = '80,120'
+vim.opt.complete = 'o,.,w,b,u'
 vim.opt.completeopt = { 'fuzzy', 'menu', 'menuone', 'noselect', 'preview' }
 vim.opt.conceallevel = 0
 vim.opt.cursorline = true
@@ -16,6 +17,7 @@ vim.opt.number = true
 vim.opt.numberwidth = 4
 vim.opt.pumblend = 10
 vim.opt.pumheight = 10
+vim.opt.pummaxwidth = 60
 vim.opt.relativenumber = true
 vim.opt.ruler = false
 vim.opt.scrolloff = 10
@@ -36,10 +38,10 @@ vim.opt.updatetime = 100
 vim.opt.writebackup = false
 vim.opt.rtp:append('/opt/homebrew/opt/fzf')
 
--- disable providers
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
--- these need to be before lazy
+vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '

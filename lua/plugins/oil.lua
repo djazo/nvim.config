@@ -1,11 +1,9 @@
-local M = {}
+vim.pack.add({
+  { src = 'https://github.com/stevearc/oil.nvim' },
+})
 
-function M.config()
-  require('oil').setup({
-    view_options = {
-      show_hidden = true,
-    }
-  })
-end
-
-return M
+require('oil').setup({
+  view_options = {
+    show_hidden = true,
+  }
+})

@@ -1,21 +1,46 @@
-local M = {}
+vim.pack.add({
+  { src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
+})
 
-function M.config()
-  require('nvim-treesitter').setup {
-    ensure_installed = {
-      'asm', 'bash', 'c', 'caddy', 'cmake', 'cpp', 'css', 'csv', 'diff',
-      'dockerfile', 'dot', 'doxygen', 'gitcommit', 'gitignore', 'gnuplot',
-      'go', 'html', 'latex', 'linkerscript', 'lua', 'markdown', 'meson',
-      'ninja', 'objdump', 'python', 'regex', 'verilog', 'sql', 'toml',
-      'xml', 'yaml', 'zsh',
-    },
-    hilight = {
-      enable = true,
-    },
-    indent = {
-      enable = true,
-    },
-  }
-end
-
-return M
+require('nvim-treesitter').setup({
+  ensure_installed = {
+      'asm',
+      'bash',
+      'c',
+      'caddy',
+      'cmake',
+      'cpp',
+      'css',
+      'csv',
+      'diff',
+      'dockerfile',
+      'dot',
+      'doxygen',
+      'gitcommit',
+      'gitignore',
+      'gnuplot',
+      'go',
+      'html',
+      'latex',
+      'linkerscript',
+      'lua',
+      'markdown',
+      'meson',
+      'ninja',
+      'objdump',
+      'python',
+      'regex',
+      'verilog',
+      'sql',
+      'toml',
+      'xml',
+      'yaml',
+      'zsh',
+  },
+  hilight = {
+    enable = true,
+  },
+  indent = {
+    enable = true,
+  },
+})

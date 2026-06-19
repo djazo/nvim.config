@@ -1,12 +1,12 @@
-local M = {}
+vim.pack.add({
+  'https://github.com/nvim-tree/nvim-web-devicons',
+  'https://github.com/nvim-lualine/lualine.nvim'
+})
 
-function M.config()
-  require('lualine').setup({
-    options = {
-      component_separators = { left = '', right = '' },
-      section_separators = { left = '', right = '' },
-      ignore_focus = { 'NvimTree' },
-    },
+require('lualine').setup({
+  options = {
+    icons_enabled = true,
+    theme = 'auto',
     sections = {
       lualine_a = { 'mode' },
       lualine_b = { 'branch', 'diff', 'diagnostics' },
@@ -31,8 +31,8 @@ function M.config()
       lualine_y = {},
       lualine_z = {},
     },
-    extensions = { 'quickfix', 'man', 'fugitive' }
-  })
-end
-
-return M
+    extension = {
+      'quickfix','oil',
+    },
+  }
+})

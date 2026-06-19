@@ -1,9 +1,7 @@
-local M = {}
+vim.pack.add({
+  { src = 'https://github.com/lukas-reineke/indent-blankline.nvim' },
+})
 
-function M.config()
-  require('ibl').setup({
-    scope = { enabled = true },
-  })
-end
-
-return M
+require('ibl').setup({
+  scope = { enabled = true },
+})
