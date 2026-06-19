@@ -1,6 +1,6 @@
 vim.pack.add({
-  'https://github.com/nvim-mini/mini.pick',
-  'https://github.com/nvim-mini/mini.icons',
+  { src = 'https://github.com/nvim-mini/mini.pick' },
+  { src = 'https://github.com/nvim-mini/mini.icons' },
 })
 
 require('mini.pick').setup()
