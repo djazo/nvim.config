@@ -4,7 +4,7 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.cmdheight = 1
 vim.opt.colorcolumn = '80,120'
 vim.opt.complete = 'o,.,w,b,u'
-vim.opt.completeopt = { 'fuzzy', 'menu', 'menuone', 'noselect', 'preview' }
+vim.opt.completeopt = { 'menuone', 'noselect', 'fuzzy', 'preview' }
 vim.opt.conceallevel = 0
 vim.opt.cursorline = true
 vim.opt.expandtab = true
@@ -36,6 +36,8 @@ vim.opt.title = false
 vim.opt.undofile = true
 vim.opt.updatetime = 100
 vim.opt.writebackup = false
+
+vim.opt.shortmess:append('c')
 vim.opt.rtp:append('/opt/homebrew/opt/fzf')
 
 vim.g.loaded_perl_provider = 0

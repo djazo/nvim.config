@@ -18,3 +18,8 @@ wk.add({
   { '<leader>lk', function() vim.diagnostic.jump({ count = -1, float = true }) end, desc = 'Previous Diagnostic'},
   { '<leader>lq', function() vim.diagnostic.setloclist() end, desc = 'Diagnostic to LocList'},
 })
+
+-- git menu
+wk.add({
+  { '<leader>g', group = 'git'},
+})

@@ -1,5 +1,5 @@
 vim.pack.add({
-  { src = 'https://github.com/lewis6991/gitsigns.nvim.git' },
+  { src = 'https://github.com/lewis6991/gitsigns.nvim' }
 })
 
 local icons = require('core.icons')
@@ -7,7 +7,7 @@ local icons = require('core.icons')
 require('gitsigns').setup({
   signs = {
     add = {
-      text = icons.ui.BoldLineMiddle,
+      text = icons.ui.BoldLineMiddle
     },
     change = {
       text = icons.ui.BoldLineDashedMiddle,

@@ -1,6 +1,7 @@
 local icons = require('core.icons')
 
 vim.diagnostic.config({
+  virtual_text = true,
   signs = {
     text = {
       [vim.diagnostic.severity.ERROR] = icons.diagnostics.Error,
