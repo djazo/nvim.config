@@ -1,8 +1,6 @@
 require 'core.options'
 require 'core.keymap'
 require 'plugins.mini'
-require 'plugins.snippets'
-require 'plugins.oil'
 require 'plugins.treesitter'
 require 'plugins.whichkey'
 require 'plugins.lspconfig'
