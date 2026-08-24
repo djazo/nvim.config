@@ -41,3 +41,4 @@ luac.out
 
 # lazy lock
 lazy-lock.json
+nvim-pack-lock.json
