@@ -8,6 +8,7 @@ vim.lsp.config('clangd', {
     '--completion-style=detailed',
     '--function-arg-placeholders',
     '--style=file',
+    '--query-driver=/Users/azo/Toolchains/**/bin/clang*',
   }
 })
 

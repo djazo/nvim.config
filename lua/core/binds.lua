@@ -10,13 +10,15 @@ wk.add({
 
 -- lsp menu
 wk.add({
-  { '<leader>l', group = 'LSP'},
+  { '<leader>l', group = 'LSP / Trim'},
   { '<leader>lf', function() vim.lsp.buf.format({ async = true }) end, desc = 'Format'},
   { '<leader>la', vim.lsp.buf.code_action, desc = 'Code Action'},
   { '<leader>lh', function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end, desc = 'Toggle Inlay Hints'},
   { '<leader>lj', function() vim.diagnostic.jump({ count = 1, float = true }) end, desc = 'Next Diagnostic'},
   { '<leader>lk', function() vim.diagnostic.jump({ count = -1, float = true }) end, desc = 'Previous Diagnostic'},
   { '<leader>lq', function() vim.diagnostic.setloclist() end, desc = 'Diagnostic to LocList'},
+  { '<leader>le', function() MiniTrailspace.trim() end, desc = 'Trim Trailing Whitespace'},
+  { '<leader>lw', function() MiniTrailspace.trim_last_lines() end, desc = 'Trim Last Lines'}
 })
 
 -- git menu
@@ -34,12 +36,11 @@ wk.add({
 })
 
 wk.add({
-  { '<leader>t', group = 'trim'},
-  { '<leader>tl', function() MiniTrailspace.trim() end, desc = 'Trim Trailing Whitespace'},
-  { '<leader>tf', function() MiniTrailspace.trim_last_lines() end, desc = 'Trim Last Lines'}
+  { '<leader>p', group = 'plugins'},
+  { '<leader>pu', function() vim.pack.update() end, desc = 'Update Plugins'},
 })
 
 wk.add({
-  { '<leader>p', group = 'plugins'},
-  { '<leader>pu', function() vim.pack.update() end, desc = 'Update Plugins'},
+  { '<leader>t', group = 'vimtex'},
+  { '<leader>tl', '<plug>(vimtex-compile-toggle)', desc = "Compile"},
 })
